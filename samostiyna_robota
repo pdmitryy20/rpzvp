@@ -1,0 +1,74 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Reflection.Emit;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Xml;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+namespace WindowsFormsApp3
+{
+    public partial class Lab3 : Form
+    {
+        public Lab3()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Lab1.Font = new Font("", 25);
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Lab1.Font = new Font("Arial", 25);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Lab1.TextAlign = ContentAlignment.MiddleCenter;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Lab2.Font = new Font("", 30);
+        }
+
+        private void жовтийToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BackColor = Color.Yellow;
+        }
+
+        private void зеленийToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lab1.BackColor = Color.Green;
+        }
+
+        private void фіолетовийToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lab2.BackColor = Color.Purple;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Lab2.TextAlign = HorizontalAlignment.Right;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            
+        }
+    }
+}
